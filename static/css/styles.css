@@ -150,12 +150,36 @@
 		font-size: 1em;
 		color: #FAFAD2;
 		text-align: center;
-		margin-top: 5%; 
+		margin-top: 15%; 
 	}
 	#bottom_blue
 	{
 		width: 100%;
 
+	}
+	#bottom_blue
+	{
+		width: 50%;
+		margin: auto;
+		background-color: grey;
+		vertical-align: top;
+	}
+	#head_shot2
+	{
+		margin-top: 0;
+		margin-left: 0;
+		width: 10%;
+		display: inline-block;
+		margin-left: 45%;
+	}
+	#head2p
+	{
+		font-family: 'Open Sans', serif;
+		font-size: .6em;
+		color: white;
+		text-align: center;
+		vertical-align: top;
+		/*margin-top: 3%;*/
 	}
 }
 
@@ -289,14 +313,19 @@
 	{
 		font-family: 'Open Sans', serif;
 		font-size: 3em;
-		color: #FAFAD2;
+		/*color: #FAFAD2;*/
+		color: white;
 		text-align: center;
+		margin-top: 5%;
+
 		
 	}
 	#bottom_blue
 	{
 		width: 50%;
 		margin: auto;
+		background-color: grey;
+		vertical-align: top;
 	}
 	#head_shot2
 	{
@@ -305,6 +334,15 @@
 		width: 5%;
 		display: inline-block;
 		margin-left: 47.5%;
+	}
+	#head2p
+	{
+		font-family: 'Open Sans', serif;
+		font-size: 1.25em;
+		color: grey;
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 3%;
 	}
 
    
