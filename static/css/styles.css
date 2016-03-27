@@ -149,10 +149,13 @@
 		font-family: 'Open Sans', serif;
 		font-size: 1em;
 		color: #FAFAD2;
-		display: inline-block;
 		text-align: center;
-		margin-left: 33%;
 		margin-top: 5%; 
+	}
+	#bottom_blue
+	{
+		width: 100%;
+
 	}
 }
 
@@ -245,7 +248,7 @@
 	}
 	#head_shot
 	{
-		margin-top: 0;
+		margin-top: 4px;
 		margin-left: 0;
 		width: 11%;
 		display: inline-block;
@@ -279,18 +282,29 @@
 	{
 		background-color: #FAFAD2;
 		width: 100%;
-		height: 100px;
-		margin-top: 6%;
+		height: 116px;
+		margin-top: 3%;
 	}
 	#new_h3
 	{
 		font-family: 'Open Sans', serif;
 		font-size: 3em;
 		color: #FAFAD2;
-		display: inline-block;
 		text-align: center;
-		margin-left: 40%;
-		/*margin-top: 5%; */
+		
+	}
+	#bottom_blue
+	{
+		width: 50%;
+		margin: auto;
+	}
+	#head_shot2
+	{
+		margin-top: 0;
+		margin-left: 0;
+		width: 5%;
+		display: inline-block;
+		margin-left: 47.5%;
 	}
 
    
