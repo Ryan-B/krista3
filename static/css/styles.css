@@ -120,8 +120,10 @@
 	#lower_p
 	{
 		font-family: 'Open Sans', serif;
-		font-size: .5em;
+		font-size: 1em;
 		color: grey;
+		display: inline-block;
+		text-align: center;
 		
 	}
 	#twitter
