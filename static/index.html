@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>discontinÜ</title>
+  	
+       
+	<script type="text/javascript" src="/js/lib/angular.js"></script>
+	<script type="text/javascript" src="/js/lib/angular-routes.js"></script>
+	<script type="text/javascript" src="/js/modules.js"></script>
+  	<script type="text/javascript" src="/js/factories.factory.js"></script>
+  	<script type="text/javascript" src="/js/controllers.ctrl.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/js/lib/jquery.timer.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Oregano:400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Princess+Sofia' rel='stylesheet' type='text/css'>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+	
+	
+</head>
+<header>
+	<h1>discontinÜ</h1>
+</header>
+<div class="container-fluid">
+<body ng-controller="ProductsController as productsCtrl">
+
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+	<!-- <div id="stats" ng-view></div> -->
+	<div id="form">
+		<input ng-model="productsCtrl.newProduct.company_name" require placeholder="company">
+		<input ng-model="productsCtrl.newProduct.product_name" require placeholder="product name">
+		<input ng-model="productsCtrl.newProduct.ufc_code" require placeholder="ufc code">
+		
+		<button ng-click="productsCtrl.addProduct(productsCtrl.newProduct)">Add Item</button>
+	</div>
+	<br>
+
+	<table id="tabe" class="table table-bordered">
+		<tr>
+			<th>Company</th>
+			<th>Product</th>
+			<th>UFC Code</th>
+			<th>Remove</th>
+			
+		<tr>
+		<tr ng-repeat="product in productsCtrl.products">
+			<p class="p_td"><td ng-bind="product.company_name"></td></p>
+			<p class="p_td"><td ng-bind="product.product_name"></td></p>		
+			<p class="p_td"><td ng-bind="product.ufc_code"></td></p>
+			<p class="p_td"><td><button class="btn btn-danger" ng-click="productsCtrl.removeProduct(product)">Remove</button></td></p>
+			<!-- <td><button class="btn btn-default" ng-click="productsCtrl.editProduct(product)">Edit</button></td> -->
+		</tr>
+		
+	</table>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+<style>
+	*{
+		/*border: 1px dotted purple;*/
+	}
+	body{
+		background-image: url('lipsticks.jpg');
+
+    	background-repeat: no-repeat;
+   
+    	background-size: cover;
+	}
+
+	h1{
+		font-family: 'Princess Sofia', cursive;
+		font-size: 60pt;
+		color: black;
+		text-align: right;
+		margin-top: 5px;
+		margin-right: 20px; 
+	}
+	/*form{
+		margin-left: 30%;*/
+	/*}*/
+	/*#submit{
+		margin-left: 20%;
+	}*/
+	/*#form{
+		margin: 0 auto;
+		width: 50%;*/
+	/*}*/
+	ul li{
+		display: inline;
+	}
+	/*table {
+		margin-top: 5%;
+
+	}
+*/
+	td{
+		
+		
+		background-color: white;
+		opacity: .7;
+		font-weight: 600;
+
+	}
+	th{
+		background-color: white;
+		opacity: .8;
+	}
+	td button{
+		color: black;
+		opacity: 1;
+	}
+		
+		
+
+	
+
+</style>
