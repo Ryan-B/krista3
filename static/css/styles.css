@@ -7,7 +7,7 @@
     }
     body
     {
-    	background-color: #00b0b3;
+    	background-color: #8eaebd;
     }
     #header_div
     {
@@ -73,18 +73,18 @@
 		width: 100%;
 		height:  330px;
 		/*border: 1px dashed blue;*/
-		background-image: url("/img/beach3.JPG");
+		background-image: url("/img/bw.jpeg");
 		background-repeat: no-repeat;
 	}
 	#inner_beach1
 	{
-		width: 50%;
-		height: 330px;
-		opacity: .4;
+		width: 80%;
+		/*height: 330px;*/
+		opacity: .99;
 		/*border: 1px solid gold;*/
-		margin-left: 25%;
-		background-color: white;
-		display: inline-block;
+		margin: auto;
+		/*background-color: white;*/
+		/*display: inline-block;*/
 		
 		
 	}
@@ -92,7 +92,7 @@
 	{
 		font-family: 'Droid Serif', serif;
 		text-align: center;
-		color: black;
+		color: white;
 		font-size: 1.75em;
 		display: inline-block;
 		margin-top: 20%;
@@ -100,7 +100,7 @@
 	#second_section
 	{
 		width: 50%;
-		margin-left: 25%;
+		/*margin-left: 25%;*/
 		display: inline-block;
 		background-color: 	#FAFAD2;
 
@@ -109,7 +109,7 @@
 	{
 		width: 50%;
 		display: inline-block;
-		margin: 4px 0 0 4px;
+		/*margin: 4px 0 0 4px;*/
 		border: 1px solid black
 
 	}
@@ -177,7 +177,7 @@
 		font-family: 'Open Sans', serif;
 		font-size: .6em;
 		color: white;
-		text-align: center;
+		text-align: left;
 		vertical-align: top;
 		/*margin-top: 3%;*/
 	}
@@ -189,6 +189,11 @@
 
 @media screen and (min-width: 1024px){
 
+	body
+	{
+		margin:  0 10% 5% 10%;
+		background-color: lightgrey;
+	}
 	#krista_div
     {
     	width: 20%;
@@ -211,7 +216,7 @@
         width: 100%;
         height: 100px;
         /*border-bottom: 1px solid 	#FAFAD2;*/
-        background-color: #00b0b3;
+        background-color: #8eaebd;
     }
     #ul_div
 	{
@@ -226,8 +231,9 @@
 		width: 100%;
 		height:  660px;
 		/*border: 1px dashed blue;*/
-		background-image: url("/img/beach2.JPG");
+		background-image: url("/img/bw.jpeg");
 		background-repeat: no-repeat;
+		background-size: cover;
 	}
 	 #menu_stack
     {
@@ -236,35 +242,34 @@
     }
     #inner_beach1
 	{
-		width: 20%;
-		height: 660px;
-		opacity: .5;
-		/*border: 1px solid gold;*/
-		margin-left: 20%;
-		background-color: white;
-		display: inline-block;
+		/*width: 20%;*/
+		/*height: 660px;*/
+		opacity: .99;
+		margin: auto;
+		/*margin-left: 20%;*/
+		/*background-color: white;*/
+		/*display: inline-block;*/
 	}
 	#beach_h1
 	{
 		font-family: 'Droid Serif', serif;
 		text-align: center;
-		color: black;
-		font-size: 3em;
+		color: snow;
+		font-size: 3.1em;
 		display: inline-block;
-		margin-top: 42%;
-
+		text-shadow: 2px 2px 2px black;
 	}
 	#second_section
 	{
-		width: 60%;
-		margin-left: 20%;
+		width: 100%;
+		/*margin-left: 20%;*/
 		display: inline-block;
 		background-color: 	#FAFAD2;
 
 	}
 	#inner_second
 	{
-		width: 20%;
+		width: 50%;
 		display: inline-block;
 		vertical-align: top;
 		height: 100%;
@@ -272,18 +277,18 @@
 	}
 	#head_shot
 	{
-		margin-top: 4px;
-		margin-left: 0;
-		width: 11%;
+		
+		border: none;
+		width: 16%;
 		display: inline-block;
-		margin-left: 33.35%;
+		margin-left: 25%;
 	}
 	#lower_p
 	{
 		font-family: 'Open Sans', serif;
-		font-size: 1.5em;
+		font-size: 2.5em;
 		margin-top: 5%;
-		color: grey;
+		color: #8eaebd;
 		display: inline-block;
 		vertical-align: top;
 		text-align: center;
@@ -339,10 +344,10 @@
 	{
 		font-family: 'Open Sans', serif;
 		font-size: 1.25em;
-		color: grey;
+		color: #8eaebd;
 		display: inline-block;
 		vertical-align: top;
-		margin-top: 3%;
+		margin-top: 5%;
 	}
 
    
